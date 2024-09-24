@@ -33,7 +33,7 @@
                                     <option value="text">نص</option>
                                     <option value="phone">رقم هاتف</option>
                                     <option disabled value="vcard">بطاقة رقمية (vCard)</option>
-                                    <option disabled value="wifi">شبكة واي فاي</option>
+                                    <option value="wifi">شبكة واي فاي</option>
                                 </select>
 
                             </div>
@@ -51,9 +51,26 @@
                                 <label for="phone" class="form-label">أدخل رقم الهاتف</label>
                                 <input type="tel" class="form-control" id="phone" placeholder="01234567890">
                             </div>
-
-
-
+                            <div id="wifiInput" style="display: none;">
+                                <h5>تفاصيل شبكة الواي فاي</h5>
+                                <div class="mb-3">
+                                    <label for="qrcode-wifi-ssid" class="form-label">اسم الشبكة (SSID)</label>
+                                    <input type="text" class="form-control" id="qrcode-wifi-ssid" placeholder="اسم الشبكة">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="qrcode-wifi-password" class="form-label">كلمة المرور</label>
+                                    <input type="text" class="form-control" id="qrcode-wifi-password" placeholder="كلمة المرور">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="qrcode-wifi-encryption" class="form-label">نوع التشفير</label>
+                                    <select class="form-select" id="qrcode-wifi-encryption">
+                                        <option value="nopass" selected="selected">بدون تشفير</option>
+                                        <option value="WEP">WEP</option>
+                                        <option value="WPA">WPA/WPA2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
                             <button type="submit" class="btn btn-primary">إرسال</button>
                         </form>
                     </div>
