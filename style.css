@@ -5,3 +5,58 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #0c8849;
+    color: #cf8b40;
+    font-family: 'Tajawal', sans-serif;
+}
+
+h2{
+    color: #fff;
+    font-weight: bold;
+}
+.accordion-button , .accordion-button:not(.collapsed) {
+    background-color: #cf8b40; 
+    color: #fff;
+    border: 1px solid #cf8b40;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+.accordion-button:not(.collapsed)::after , .accordion-button::after{
+    background: none !important;
+}
+
+
+.accordion-body {
+    border-radius: 10px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #cf8b40;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #cf8b40;
+    box-shadow: 0 0 5px rgba(207, 139, 64, 0.5);
+}
+
+.btn-primary {
+    background-color: #cf8b40;
+    border-color: #cf8b40;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0c8849;
+    border-color: #0c8849;
+}
+
+label{
+    font-weight: bold;
+}
+textarea{
+    resize: none;
+}
